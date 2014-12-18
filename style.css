@@ -134,6 +134,10 @@ a.logo .title{
 	top: 35px;
 }
 
+.social_links ul{
+	overflow: hidden;
+}
+
 .social_links ul li{
 	float: left;
 }
@@ -141,6 +145,7 @@ a.logo .title{
 .social_links ul li a{
 	float: left;
 	margin-left: 24px;
+	color: transparent;
 }
 
 .social_links ul li:first-child a{
@@ -235,14 +240,15 @@ nav ul{
 	border-radius: 4px;
 }
 
-nav ul li:first-child{
-	border-radius: 4px 4px 0 0;
-}
-
 nav ul li{
 	position: relative;
 	margin-top: -2px;
 	margin-bottom: -2px;
+}
+
+nav ul li:first-child{
+	border-radius: 4px 4px 0 0;
+	margin-top: 0;
 }
 
 nav ul li:before{
@@ -267,12 +273,13 @@ nav ul li:after{
 nav ul li:last-child:after,
 nav ul li:first-child:after{
 	content: '';
-	position: absolute;
-	bottom: -2px;
-	height: 2px;
-	width: 230px;
-	background: #EFF3F7;
-	opacity: 0;
+	height: 0;
+}
+
+nav ul li:last-child:before,
+nav ul li:first-child:before{
+	content: '';
+	height: 0;
 }
 
 nav ul li:last-child{
@@ -295,7 +302,6 @@ nav ul li.activ a{
 nav ul li a{
 	display: block;
 	font-size: 1.3em;
-	/*height: 73px;*/
 	line-height: 76px;
 	padding-left: 29px;
 	color: #959AA8;
@@ -390,14 +396,13 @@ nav ul li a{
 	margin-bottom: 25px;
 	width: 650px;
 	overflow: hidden;
-	padding: 0 20px 20px 0;
+	padding: 0 0 20px 0;
 }
 
 .content > div p{
 	color: #37424D;
 	font-size: 1em;
 	margin-bottom: 15px;
-	/*display: inline-block;*/
 }
 
 .content > div p span{
