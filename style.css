@@ -231,7 +231,7 @@ aside{
 }
 
 nav{
-	margin-bottom: 20px;
+	margin-bottom: 25px;
 	font-weight: 300;
 }
 
@@ -302,7 +302,7 @@ nav ul li.activ a{
 nav ul li a{
 	display: block;
 	font-size: 1.3em;
-	line-height: 76px;
+	line-height: 74px;
 	padding-left: 29px;
 	color: #959AA8;
 }
@@ -393,7 +393,7 @@ nav ul li a{
 .content > div{
 	background: #EFF3F7;
 	border-radius: 4px;
-	margin-bottom: 25px;
+	margin-bottom: 22px;
 	width: 650px;
 	overflow: hidden;
 	padding: 0 0 20px 0;
