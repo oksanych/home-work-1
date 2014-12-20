@@ -77,8 +77,13 @@ a{
 
 @font-face {
     font-family: 'ProximaNovaCond-SemiBold';
-    src: url(fonts/Proxima-Nova/ProximaNovaCond-Semibold.eot);
     font-weight: normal;
+    font-style: normal;
+
+    src: url(fonts/Proxima-Nova/ProximaNovaCond-Semibold.eot);
+    src: url('fonts/Proxima-Nova/ProximaNovaCond-Semibold.eot?#iefix') format('embedded-opentype'),
+    url(fonts/Proxima-Nova/ProximaNovaCond-Semibold.woff) format('woff'),
+    url(fonts/Proxima-Nova/ProximaNovaCond-Semibold.ttf) format('truetype');
 }
 
 					/*-----Главная-----*/
@@ -446,6 +451,7 @@ nav ul li a{
 
 .content .skills_wrap p.skills{
 	float: left;
+	margin-right: 3px;
 }
 
 .content span.skill{
@@ -458,11 +464,11 @@ nav ul li a{
 	height: 19px;
 	line-height: 19px;
 	font-size: 0.875em;
-	padding: 0px 12px;
-	margin: 0px 7px 5px 0;
+	padding: 0px 14px;
+	margin: 0px 7px 3px 0;
 	display: inline-block;
 	color: #fff;
-	/* font-family: 'ProximaNovaCond-SemiBold'; */
+	font-family: 'ProximaNovaCond-SemiBold'; 
 	font-size: 13px;
 }
 
@@ -651,10 +657,11 @@ form textarea:-ms-input-placeholder{
 }
 
 .contact_main button{
+	font-family: 'fira_sanslight';
 	cursor: pointer;
 	border-radius: 5px;
 	border: none;
-	padding: 10px 0 8px;
+	height: 31px;
 	font-size: 19px;
 	color: #fff;
 }
@@ -670,6 +677,10 @@ form textarea:-ms-input-placeholder{
 	width: 141px;
 	border-bottom: 2px solid #687b8f;
 	float: right;
+}
+
+.contact_main button:hover{
+	border-bottom: 2px solid #EFF3F7;
 }
 
 
