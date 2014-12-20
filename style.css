@@ -295,11 +295,11 @@ a.logo .title{
 	color: #3BA8C0;
 }
 
-.nav ul li.activ{
+.nav ul li.active{
 	background: #3BA8C0;
 }
 
-.nav ul li.activ a{
+.nav ul li.active a{
 	color: #fff;
 	font-size: 1.45em;
 }

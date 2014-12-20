@@ -1,54 +1,13 @@
-<!DOCTYPE html>
-<html lang="ru">
-<head>
-	<meta charset="UTF-8">
-	<title>Мои работы</title>
-	<link href="images/favicon.ico" rel="shortcut icon" type="image/x-icon" />
-	<link rel="stylesheet" href="style.css">
-	<link rel="stylesheet" href="fonts/fira/fira.css">
-	<!-- <link rel="stylesheet" href="fonts/Proxima-Nova/proxima.css"> -->
-	<!--[if lt IE 9]>
-		<script type="text/javascript" src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-	<![endif]-->
-</head>
-<body>
-	<div class="wrapper">
-		<header class="header">
-			<div class="header_content">
-				<a href="/" class="logo">
-					<span class="site_name">loftschool</span>
-					<span class="title">комплексное обучени web разаработке</span>
-				</a>
-				<div class="social_links">
-					<ul>
-						<li><a href="https://vk.com/oksanich_90" class="vk">vk</a></li>
-						<li><a href="#" class="twitter">twitter</a></li>
-						<li><a href="#" class="facebook">facebook</a></li>
-						<li><a href="https://github.com/oksanich" class="git">git</a></li>
-					</ul>
-				</div>
-			</div>
-			<span class="gradient_line"></span>
-		</header>
+<?php
+	$title = 'Мои работы';
+	$menu_active = "portfolio";
+	require_once 'header.php';
+?>
 
 		<div class="content_main">
-			<aside class="aside">
-				<nav class="nav">
-					<ul>
-						<li><a href="index.html">Обо мне</a></li>
-						<li class="activ"><a href="portfolio.html">Мои работы</a></li>
-						<li><a href="contact.html">Связаться со мной</a></li>
-					</ul>
-				</nav>
-				<div class="contact">
-					<p>Контакты</p>
-					<ul>
-						<li><a href="mailto:pochta@mail.ru">pochta@mail.ru</a></li>
-						<li><a href="tel:+79812342323">+79812342323</a></li>
-						<li><a href="skype:nickname?add">nickname</a></li>
-					</ul>
-				</div>
-			</aside>
+			<?php
+				require_once 'sidebar.php';
+			?>
 			<div class="content">
 				<div class="about_me my_work">
 					<span class="wrap_h"><h1>Мои работы</h1></span>
@@ -173,16 +132,6 @@
 				</div>
 			</div>
 		</div>
-		<footer class="footer">
-			<div class="footer_content">
-				<span class="gradient_line"></span>
-				<div class="copiright">© 2014, Это мой сайт, пожалуйста, не копируйте и не воруйте его</div>
-			</div>
-		</footer>
-	</div>
-
-	<script src="js/jquery_2_0_3.min.js"></script>
-	<script src="js/modal_window.js"></script>
-	
-</body>
-</html>
+<?php
+	require_once 'footer.php';
+?>
