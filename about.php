@@ -1,6 +1,6 @@
 <?php
 	$title = 'Обо мне';
-	$menu_active = "index";
+	$menu_active = "about";
 	require_once 'header.php';
 ?>
 

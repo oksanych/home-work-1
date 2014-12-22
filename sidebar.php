@@ -1,9 +1,9 @@
 <aside class="aside">
 	<nav class="nav">
 		<ul>
-			<li <?php if($menu_active == "index") echo "class='active'";?> ><a href="index.php">Обо мне</a></li>
-			<li <?php if($menu_active == "portfolio") echo "class='active'";?> ><a href="portfolio.php">Мои работы</a></li>
-			<li <?php if($menu_active == "contact") echo "class='active'";?> ><a href="contact.php">Связаться со мной</a></li>
+			<li <?php if($menu_active == "about") echo "class='active'";?> ><a href="about">Обо мне</a></li>
+			<li <?php if($menu_active == "portfolio") echo "class='active'";?> ><a href="portfolio">Мои работы</a></li>
+			<li <?php if($menu_active == "contact") echo "class='active'";?> ><a href="contact">Связаться со мной</a></li>
 		</ul>
 	</nav>
 	<div class="contact">
